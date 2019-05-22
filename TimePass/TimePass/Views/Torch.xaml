@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             BackgroundColor="Black"
+             Title="{Binding Title}"
+             x:Class="TimePass.Views.Torch">
+
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <Button VerticalOptions="Center" HorizontalOptions="Center" Text="{Binding TorchStatus}" Command="{Binding ToggleTorch}" CommandParameter="{Binding TorchStatus}" />
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

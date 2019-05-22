@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+                  prism:ViewModelLocator.AutowireViewModel="True"
+                  BackgroundColor="Red"
+                  x:Class="TimePass.Views.MasterPage">
+
+    <MasterDetailPage.Master>
+        <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="using:MasterDetailPageNavigation"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             Padding="0,40,0,0"
+             Icon="hamburger.png"
+             BackgroundColor="Yellow"
+             Title="Personal Organiser">
+            <StackLayout>
+
+                <!--<ffimageloading:CachedImage Source="hamburger.png" WidthRequest="25" HeightRequest="25" />-->
+                <StackLayout Padding="2" Orientation="Horizontal" >
+                    <Image Source="hamburger.png" WidthRequest="25" HeightRequest="25" />
+                    <Button Text="Torch" HorizontalOptions="FillAndExpand" Command="{Binding MenuItemTapped}" CommandParameter="Torch" />
+                </StackLayout>
+
+                <StackLayout Padding="2" Orientation="Horizontal" >
+                    <!--<ffimageloading:CachedImage Source="hamburger.png" WidthRequest="25" HeightRequest="25" />-->
+                    <Image Source="hamburger.png" WidthRequest="25" HeightRequest="25" />
+                    <Button Text="Notes" HorizontalOptions="FillAndExpand" Command="{Binding MenuItemTapped}" CommandParameter="Notes" />
+                </StackLayout>
+
+                <StackLayout Padding="2" Orientation="Horizontal" >
+                    <!--<ffimageloading:CachedImage Source="hamburger.png" WidthRequest="25" HeightRequest="25" />-->
+                    <Image Source="hamburger.png" WidthRequest="25" HeightRequest="25" />
+                    <Button Text="Share" HorizontalOptions="FillAndExpand" Command="{Binding MenuItemTapped}" CommandParameter="Share"/>
+                </StackLayout>
+
+                <StackLayout Padding="2" Orientation="Horizontal" >
+                    <!--<ffimageloading:CachedImage Source="hamburger.png" WidthRequest="25" HeightRequest="25" />-->
+                    <Image Source="hamburger.png" WidthRequest="25" HeightRequest="25" />
+                    <Button Text="Share" HorizontalOptions="FillAndExpand" Command="{Binding MenuItemTapped}" CommandParameter="Motion"/>
+                </StackLayout>
+
+                <StackLayout Padding="2" Orientation="Horizontal" >
+                    <!--<ffimageloading:CachedImage Source="hamburger.png" WidthRequest="25" HeightRequest="25" />-->
+                    <Image Source="hamburger.png" WidthRequest="25" HeightRequest="25" />
+                    <Button Text="Share" HorizontalOptions="FillAndExpand" Command="{Binding MenuItemTapped}" CommandParameter="Barometer"/>
+                </StackLayout>
+
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="using:MasterDetailPageNavigation"
+             Padding="0,40,0,0"
+             BackgroundColor="Green"
+             Title="Detail">
+            <StackLayout>
+
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

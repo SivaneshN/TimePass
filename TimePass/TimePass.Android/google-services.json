@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "226192401420",
+    "firebase_url": "https://timepass-bc515.firebaseio.com",
+    "project_id": "timepass-bc515",
+    "storage_bucket": "timepass-bc515.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226192401420:android:2ae27e8a6cc6777d",
+        "android_client_info": {
+          "package_name": "com.prosares.timepass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226192401420-modbmk2s4kbumfomb363j1p5v071hlk0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYzZEPxlGhAoTZ_g2gEV-2lQmcx-d6rcA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "226192401420-modbmk2s4kbumfomb363j1p5v071hlk0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
